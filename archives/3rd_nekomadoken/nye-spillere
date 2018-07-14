@@ -1,0 +1,8 @@
+(
+("N28" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 10 "Kyu" 0 0 nil)
+("N29" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 2 "Dan" 0 0 nil)
+("N30" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 3 "Kyu" 0 0 nil)
+("N31" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 3 "Kyu" 0 0 nil)
+("N32" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 5 "Dan" 0 0 nil)
+("N33" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 3 "Kyu" 0 0 nil)
+)

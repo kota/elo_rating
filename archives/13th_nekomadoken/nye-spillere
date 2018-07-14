@@ -1,0 +1,5 @@
+(
+("N55" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 3 "Kyu" 0 0 nil)
+("N56" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 2 "Dan" 0 0 nil)
+("N57" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 1 "Kyu" 0 0 nil)
+)

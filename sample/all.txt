@@ -1,0 +1,7 @@
+Elo list for 2016-01-07
+
+    Name                               Grades       Elo #games Nationality
+  1 Ishikawa          Musashi                 1 Dan 1787   8     FR
+  2 Ould Ahmed        Samy                          1321   6     FR
+  3 Hebert            Pascal                         852   6     FR
+  4 Mazouzi           Sana                             1   6     FR

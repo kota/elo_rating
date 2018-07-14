@@ -1,0 +1,54 @@
+Elo list for 2016-11-23
+
+    Name                               Grades       Elo #games Nationality
+  1 N37                                       6 Dan 2580   4     JP
+  2 N32                                       5 Dan 2500   8     JP
+  3 N18                                       5 Dan 2411   4     JP
+  4 N39                                       4 Dan 2358   5     JP
+  5 N103                                      4 Dan 2308   4     JP
+  6 N2                                 3 Dan  5 Dan 2279  16     JP
+  7 N10                                       3 Dan 2259   4     JP
+  8 N24                                4 Dan  4 Dan 2229  25     JP
+  9 N38                                       3 Dan 2124   7     JP
+ 10 N11                                       4 Dan 2101   5     JP
+ 11 N101                                      2 Dan 2024   4     JP
+ 12 N12                                       3 Dan 2016   3     JP
+ 13 N21                                2 Dan  4 Dan 1943  21     JP
+ 14 N4                                        2 Dan 1926   4     JP
+ 15 N6                                        3 Dan 1921   5     JP
+ 16 N44                                       3 Dan 1902   6     JP
+ 17 N29                                       2 Dan 1866   5     JP
+ 18 N42                                       2 Dan 1830   7     JP
+ 19 N45                                       2 Dan 1809   6     JP
+ 20 N3                                        2 Dan 1793   5     JP
+ 21 N30                                2 Kyu  3 Kyu 1791  17     JP
+ 22 N27                                2 Kyu  2 Dan 1766  13     JP
+ 23 N35                                3 Kyu  1 Kyu 1672  17     JP
+ 24 N40                                       1 Kyu 1667   5     JP
+ 25 N43                                       2 Dan 1651   5     JP
+ 26 N36                                       3 Kyu 1650   5     JP
+ 27 N26                                2 Kyu  1 Kyu 1641  20     JP
+ 28 N23                                3 Kyu  1 Kyu 1613  17     JP
+ 29 N41                                       3 Dan 1599   5     JP
+ 30 N15                                2 Kyu  2 Kyu 1589  20     JP
+ 31 N17                                2 Kyu  4 Kyu 1572  26     JP
+ 32 N46                                       2 Kyu 1566   5     JP
+ 33 N22                                       1 Kyu 1563   5     JP
+ 34 N31                                4 Kyu  3 Kyu 1531  11     JP
+ 35 N102                                      1 Dan 1518   4     JP
+ 36 N19                                4 Kyu  2 Kyu 1516  11     JP
+ 37 N25                                       3 Kyu 1481   7     JP
+ 38 N48                                       1 Kyu 1461   5     JP
+ 39 N49                                       2 Kyu 1452   5     JP
+ 40 N14                                5 Kyu  4 Kyu 1426  17     JP
+ 41 N5                                        2 Kyu 1388   8     JP
+ 42 N47                                       3 Kyu 1362   5     JP
+ 43 N13                                5 Kyu  3 Kyu 1344  14     JP
+ 44 N7                                        3 Kyu 1336   5     JP
+ 45 N16                                6 Kyu  7 Kyu 1330  17     JP
+ 46 N33                                       3 Kyu 1328   8     JP
+ 47 N20                                       1 Kyu 1316   5     JP
+ 48 N34                                       3 Kyu 1249   5     JP
+ 49 N9                                        5 Kyu 1187   4     JP
+ 50 N8                                        5 Kyu  996   8     JP
+ 51 N28                                      10 Kyu  766   3     JP

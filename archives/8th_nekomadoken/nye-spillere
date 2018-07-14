@@ -1,0 +1,11 @@
+(
+("N41" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 3 "Dan" 0 0 nil)
+("N42" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 2 "Dan" 0 0 nil)
+("N43" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 2 "Dan" 0 0 nil)
+("N44" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 3 "Dan" 0 0 nil)
+("N45" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 2 "Dan" 0 0 nil)
+("N46" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 2 "Kyu" 0 0 nil)
+("N47" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 3 "Kyu" 0 0 nil)
+("N48" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 1 "Kyu" 0 0 nil)
+("N49" "" (#S(HOME :list #\E :nationality "JP" :residens "JP")) 2 "Kyu" 0 0 nil)
+)

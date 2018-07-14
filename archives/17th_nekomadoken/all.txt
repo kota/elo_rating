@@ -1,0 +1,111 @@
+Elo list for 2017-08-19
+
+    Name                               Grades       Elo #games Nationality
+  1 N37                                       6 Dan 2580   4     JP
+  2 N32                                       5 Dan 2500   8     JP
+  3 N105                                      5 Dan 2478   8     JP
+  4 N18                                       5 Dan 2411   4     JP
+  5 N39                                       4 Dan 2358   5     JP
+  6 N92                                       5 Dan 2311   6     JP
+  7 N103                                      4 Dan 2308   4     JP
+  8 N2                                 4 Dan  5 Dan 2291  32     JP
+  9 N10                                       3 Dan 2259   4     JP
+ 10 N64                                       3 Dan 2206   7     JP
+ 11 N24                                4 Dan  4 Dan 2198  31     JP
+ 12 N108                                      4 Dan 2170   7     JP
+ 13 N38                                2 Dan  3 Dan 2112  10     JP
+ 14 N59                                       4 Dan 2111   6     JP
+ 15 N11                                       4 Dan 2101   5     JP
+ 16 N61                                       4 Dan 2072   7     JP
+ 17 N73                                       2 Dan 2062   7     JP
+ 18 N114                                      3 Dan 2049   5     JP
+ 19 N111                               1 Dan  3 Dan 2031   9     JP
+ 20 N21                                3 Dan  4 Dan 2030  48     JP
+ 21 N101                                      2 Dan 2024   4     JP
+ 22 N12                                       3 Dan 2016   3     JP
+ 23 N106                                      3 Dan 2007   3     JP
+ 24 N77                                       3 Dan 1943   7     JP
+ 25 N90                                       2 Dan 1936   5     JP
+ 26 N4                                        2 Dan 1926   4     JP
+ 27 N74                                       2 Dan 1925   5     JP
+ 28 N6                                        3 Dan 1921   5     JP
+ 29 N67                                1 Kyu  2 Dan 1913   9     JP
+ 30 N75                                       2 Dan 1912   5     JP
+ 31 N44                                1 Kyu  3 Dan 1910   9     JP
+ 32 N79                                       2 Dan 1899   6     JP
+ 33 N76                                       2 Dan 1896   5     JP
+ 34 N69                                       1 Dan 1886   6     JP
+ 35 N56                                1 Kyu  2 Dan 1869  14     JP
+ 36 N27                                1 Dan  2 Dan 1869  20     JP
+ 37 N29                                       2 Dan 1866   5     JP
+ 38 N113                               1 Kyu  4 Dan 1864   9     JP
+ 39 N109                                      1 Dan 1852   5     JP
+ 40 N97                                       1 Kyu 1851   8     JP
+ 41 N110                                      1 Dan 1841   8     JP
+ 42 N42                                       2 Dan 1830   7     JP
+ 43 N45                                       2 Dan 1809   6     JP
+ 44 N65                                1 Kyu  2 Dan 1802   9     JP
+ 45 N54                                       2 Dan 1794   5     JP
+ 46 N3                                        2 Dan 1793   5     JP
+ 47 N62                                       1 Dan 1786   7     JP
+ 48 N30                                1 Dan  3 Kyu 1774  25     JP
+ 49 N66                                       1 Dan 1769   7     JP
+ 50 N85                                       1 Dan 1758   5     JP
+ 51 N119                                      1 Kyu 1731   4     JP
+ 52 N40                                2 Kyu  1 Kyu 1730  14     JP
+ 53 N35                                1 Kyu  1 Kyu 1726  41     JP
+ 54 N26                                1 Kyu  1 Kyu 1724  39     JP
+ 55 N104                                      1 Dan 1697   7     JP
+ 56 N17                                1 Kyu  4 Kyu 1690  58     JP
+ 57 N43                                       2 Dan 1651   5     JP
+ 58 N36                                       3 Kyu 1650   5     JP
+ 59 N58                                       1 Kyu 1635   5     JP
+ 60 N63                                       1 Kyu 1593   4     JP
+ 61 N23                                2 Kyu  1 Kyu 1589  26     JP
+ 62 N68                                       1 Kyu 1588   6     JP
+ 63 N41                                2 Kyu  3 Dan 1584  20     JP
+ 64 N31                                2 Kyu  3 Kyu 1582  20     JP
+ 65 N15                                2 Kyu  2 Kyu 1581  26     JP
+ 66 N46                                       2 Kyu 1566   5     JP
+ 67 N22                                       1 Kyu 1563   5     JP
+ 68 N117                                      1 Kyu 1548   3     JP
+ 69 N116                                      3 Kyu 1546   5     JP
+ 70 N82                                4 Kyu  1 Kyu 1530   9     JP
+ 71 N49                                2 Kyu  2 Kyu 1521  36     JP
+ 72 N57                                4 Kyu  1 Kyu 1514  14     JP
+ 73 N14                                2 Kyu  4 Kyu 1509  38     JP
+ 74 N78                                       2 Dan 1509   5     JP
+ 75 N112                               4 Kyu  1 Kyu 1505  11     JP
+ 76 N70                                       1 Kyu 1503   6     JP
+ 77 N19                                3 Kyu  2 Kyu 1495  26     JP
+ 78 N102                                      1 Dan 1481   6     JP
+ 79 N25                                       3 Kyu 1481   7     JP
+ 80 N118                                      1 Kyu 1473   4     JP
+ 81 N48                                       1 Kyu 1461   5     JP
+ 82 N13                                3 Kyu  3 Kyu 1461  18     JP
+ 83 N53                                       1 Dan 1460   5     PL
+ 84 N50                                4 Kyu 10 Kyu 1450  20     JP
+ 85 N71                                       3 Kyu 1427   5     JP
+ 86 N81                                5 Kyu  2 Kyu 1412  10     JP
+ 87 N5                                 5 Kyu  2 Kyu 1404   9     JP
+ 88 N20                                5 Kyu  1 Kyu 1401  11     JP
+ 89 N115                                      1 Kyu 1387   6     JP
+ 90 N120                                      3 Kyu 1376   5     JP
+ 91 N47                                       3 Kyu 1362   5     JP
+ 92 N33                                6 Kyu  3 Kyu 1351  11     JP
+ 93 N80                                       1 Kyu 1341   8     JP
+ 94 N16                                5 Kyu  7 Kyu 1338  36     JP
+ 95 N7                                        3 Kyu 1336   5     JP
+ 96 N96                                       3 Kyu 1326   6     JP
+ 97 N51                                       9 Kyu 1316   8     JP
+ 98 N98                                       4 Kyu 1314   3     JP
+ 99 N55                                6 Kyu  3 Kyu 1284  14     JP
+100 N34                                       3 Kyu 1249   5     JP
+101 N52                                7 Kyu  3 Kyu 1241  17     JP
+102 N95                                       5 Kyu 1218   6     JP
+103 N9                                        5 Kyu 1187   4     JP
+104 N8                                 6 Kyu  5 Kyu 1175  22     JP
+105 N86                                8 Kyu  5 Kyu 1128   9     JP
+106 N100                                      5 Kyu 1104   5     JP
+107 N93                                9 Kyu  4 Kyu 1100  11     JP
+108 N28                                      10 Kyu  766   3     JP

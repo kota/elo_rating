@@ -381,7 +381,59 @@ end
 
 def read_table(filnavn1="ratingliste.pre",filnavn2="nye-spillere")
   $rating = []
-  File.open(filnavn1, 'r') do |f|
+  players = parse_players(filnavn1)
+  $rating = players
+
+  new_players = parse_new_players(filnavn2)
+  $rating = $rating + new_players unless new_players.empty?
+
+  #File.open(filnavn1, 'r') do |f|
+  #  while line = f.gets do
+  #    next if line.strip.size == 0 || line.strip == ')'
+  #    match = line.match(/#S\(PLAYER :LAST-NAME (.*?) :FIRST-NAME (.*?) :NATIONALITY-LIST \(#S\(HOME :LIST (.*?) :NATIONALITY (.*?) :RESIDENS (.*?) :LAST (.*?)\)\) :GRADE-LEVEL (.*?) :GRADE-NAME (.*?) :NSR-GRADE-LEVEL (.*?) :NSR-GRADE-NAME (.*?) :ELO-NUMBER (.*?) :GAMES (.*?) :LAST-PLAYED (.*?) :LB-COUNT (.*?) :MP-COUNT (.*?) :BONUS-COUNT (.*?)\)/)
+  #    raise "Unable to parse player #{line}" unless match
+  #    unquoted = match.to_a.map { |item| item.gsub(/"/,'') }
+
+  #    player = Player.new
+  #    player.last_name = unquoted[1]
+  #    player.first_name = unquoted[2]
+  #    home = Home.new
+  #    home.list = unquoted[3]
+  #    home.nationality = unquoted[4]
+  #    home.residens = unquoted[5]
+  #    home.last = unquoted[6]
+  #    player.nationality_list = [home]
+  #    player.grade_level = unquoted[7].to_i
+  #    player.grade_name = unquoted[8]
+  #    player.nsr_grade_level = unquoted[9].to_i
+  #    player.nsr_grade_name = unquoted[10]
+  #    player.elo_number = unquoted[11].to_i
+  #    games = unquoted[12]
+  #    if games[0] == '(' && games[-1] == ')'
+  #      # gamesがリストの場合があるのでその場合はリストをそのまま入れる
+  #      #:GAMES ((2160 0 1) (2160 1 1) (2167 1 1) (2185 1 1) (2041 1 1) (1910 1 1) (2292 1 1)) 
+  #      # => 
+  #      # [[2160, 0, 1], [2160, 1, 1], [2167, 1, 1], [2185, 1, 1], [2041, 1, 1], [1910, 1, 1], [2292, 1, 1]]
+  #      player.games = games.gsub(/\(\(|\)\)/,'').split(') (').map { |game| game.split(' ').map(&:to_i) }
+  #    else
+  #      player.games = games.to_i
+  #    end
+  #    player.last_played = unquoted[13]
+  #    player.lb_count = unquoted[14].to_i
+  #    player.mp_count = unquoted[15].to_i
+  #    player.bonus_count = unquoted[16].to_i
+  #    $rating.unshift(player)
+  #  end
+  #end
+end
+
+# ruby
+def parse_players(filename)
+   players = []
+
+   return [] unless FileTest.exist?(filename)
+
+   File.open(filename, 'r') do |f|
     while line = f.gets do
       next if line.strip.size == 0 || line.strip == ')'
       match = line.match(/#S\(PLAYER :LAST-NAME (.*?) :FIRST-NAME (.*?) :NATIONALITY-LIST \(#S\(HOME :LIST (.*?) :NATIONALITY (.*?) :RESIDENS (.*?) :LAST (.*?)\)\) :GRADE-LEVEL (.*?) :GRADE-NAME (.*?) :NSR-GRADE-LEVEL (.*?) :NSR-GRADE-NAME (.*?) :ELO-NUMBER (.*?) :GAMES (.*?) :LAST-PLAYED (.*?) :LB-COUNT (.*?) :MP-COUNT (.*?) :BONUS-COUNT (.*?)\)/)
@@ -416,9 +468,55 @@ def read_table(filnavn1="ratingliste.pre",filnavn2="nye-spillere")
       player.lb_count = unquoted[14].to_i
       player.mp_count = unquoted[15].to_i
       player.bonus_count = unquoted[16].to_i
-      $rating.unshift(player)
+      players.unshift(player)
     end
   end
+
+  players
+end
+
+# ruby
+def parse_new_players(filename)
+   players = []
+
+   return [] unless FileTest.exist?(filename)
+
+   File.open(filename, 'r') do |f|
+    while line = f.gets do
+      next if line.strip.size == 0 || line.strip == ')' || line.strip == '('
+      match = line.match(/\("(.*?)" "(.*?)" \(#S\(HOME :list (.*?) :nationality (.*?) :residens (.*?)\)\) (.*?) (.*?) (.*?) (.*?) (.*?)/)
+      raise "Unable to parse player #{line}" unless match
+      unquoted = match.to_a.map { |item| item.gsub(/"/,'') }
+
+      player = Player.new
+      player.last_name = unquoted[1]
+      player.first_name = unquoted[2]
+      home = Home.new
+      home.list = unquoted[3]
+      home.nationality = unquoted[4]
+      home.residens = unquoted[5]
+      player.nationality_list = [home]
+      player.nsr_grade_level = unquoted[6].to_i
+      player.nsr_grade_name = unquoted[7]
+      player.elo_number = unquoted[8].to_i
+      games = unquoted[9]
+      if games[0] == '(' && games[-1] == ')'
+        # gamesがリストの場合があるのでその場合はリストをそのまま入れる
+        #:GAMES ((2160 0 1) (2160 1 1) (2167 1 1) (2185 1 1) (2041 1 1) (1910 1 1) (2292 1 1)) 
+        # => 
+        # [[2160, 0, 1], [2160, 1, 1], [2167, 1, 1], [2185, 1, 1], [2041, 1, 1], [1910, 1, 1], [2292, 1, 1]]
+        player.games = games.gsub(/\(\(|\)\)/,'').split(') (').map { |game| game.split(' ').map(&:to_i) }
+      else
+        player.games = games.to_i
+      end
+      player.last_played = unquoted[10]
+      player.lb_count = unquoted[11].to_i
+      player.mp_count = unquoted[12].to_i
+      players.unshift(player)
+    end
+  end
+
+  players
 end
 
 def write_table(filenavn="ratingliste.post")

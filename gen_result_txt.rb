@@ -1,4 +1,4 @@
-# result.csv.sampleの形式の結果をresult.csvに変換する
+# result.csv.sampleの形式の結果をresult.txtに変換する
 
 lines = nil
 File.open('result.csv', 'r') do |f|
@@ -29,7 +29,7 @@ lines.each do |l|
   cols = l.split(',').map(&:strip)
   r_number = cols[3]
   #results << [number, game_result(cols[4]), game_result(cols[5]), game_result(cols[6])]
-  results << [r_number, game_result(cols[4]), game_result(cols[5]), game_result(cols[6])]
+  results << [r_number, game_result(cols[4]), game_result(cols[5]), game_result(cols[6]), game_result(cols[7])]
 end
 
 results.each do |r|

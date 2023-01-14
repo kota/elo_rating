@@ -7,7 +7,7 @@ end
 players = []
 lines.each_with_index do |line, i|
   elements = line.split(',')
-  players << [elements[0], elements[1..-1]] 
+  players << [elements[0], elements[1..-1]] if elements[1..-1].all?{ |e| e != '' }
 end
 
 results = []
@@ -21,6 +21,7 @@ players.each_with_index do |player, i|
     end
     opponent = game[0..-2]
     game_result = game[-1]
+    puts "op=#{opponent}"
     opponent_index = players.index(players.find { |pl| pl[0] == opponent })
     #puts "op:#{opponent}"
     result << "#{opponent_index+1}#{game_result}"

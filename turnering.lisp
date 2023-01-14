@@ -332,6 +332,9 @@
         *results*))
   motspiller)
     ;; (format t "~%TEST: ~a because inverted is ~a" all *inverted-macmahon*)
+    (dolist (spiller all)
+      (format t "~% name: ~a cum: ~a simltan-p: ~a" (spiller-last-name spiller) (spiller-cum spiller) (spiller-simultan-p spiller))
+      )
     (push (setq *dummy* (make-spiller :last-name "DUMMY" 
               :nr 0 :pts 0) )
     all)
@@ -921,7 +924,7 @@
       ((< modification -800)(setq modification -800)))
       (when (< (abs modification)(incf limit 0.0001))
   (when show
-    (format t "~a -> ~a +/- ~,4f" 
+    (format t "guess ~a -> ~a +/- ~,4f" 
       motstander-poeng-k-list 
       (round (+ guess modification))
       limit))
@@ -1056,6 +1059,7 @@
       (dolist (spiller *all*)
   (setq motstander-poenger-k
     (get-elo-results spiller))
+  (format t "oppoents point = ~a" motstander-poenger-k)
   (format t "~%~a ~a (~d)" 
     (spiller-last-name spiller)
     (spiller-first-name spiller)
@@ -1107,7 +1111,10 @@
              motstander-poenger-k))))
         (t 
          (setq spiller-change
-         (innsats2 motstander-poenger-k))))
+         (innsats2 motstander-poenger-k))
+
+         (format t "player_change= ~d" spiller-change) 
+         ))
   (incf sumdiff (kvad (- (spiller-rating-change spiller) 
              spiller-change)))
   (setf (spiller-rating-change spiller) spiller-change)))))
@@ -1263,6 +1270,7 @@
            (ranknr-elo (- (elo-ranknr my-rating) 
               modification)))))
       (t opponent-rating))))
+    (format t "~% myrating= ~d, rating_change= ~d opponent_rating = ~d opponent_start_rating = ~d" my-rating rating-change opponent-rating (get-start-rating (first result-list)))
     (list effective-opponent-rating
     (second result-list)
     1)))

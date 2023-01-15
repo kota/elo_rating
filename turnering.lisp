@@ -16,7 +16,7 @@
   *special-promotions* nil
   *delayed-promotions* nil
   *importance* 1)
-  (les "turnering.txt")
+  (les "tmp/turnering.txt")
   (read-table)
   (calculate)
   (find-players)
@@ -30,9 +30,9 @@
   (skriv1)
   (skriv2)
   (skriv3)
-  (skriv4-html "turnering.html")
+  (skriv4-html "tmp/turnering.html")
   (find-promotions)
-  (write-promotions "turnering.html")
+  (write-promotions "tmp/turnering.html")
   (delayed-promotions)
   ;;(update-handicap-scores)
   (write-table)
@@ -792,7 +792,7 @@
   (t (push 5 (spiller-significance s2))
      4)))
 
-(defun read-table (&optional (filnavn1 "ratingliste.pre")(filnavn2 "nye-spillere"))
+(defun read-table (&optional (filnavn1 "tmp/ratingliste.pre")(filnavn2 "tmp/nye-spillere"))
   (with-open-file (f filnavn1 :direction :input :external-format 'charset:iso-8859-1)
     (setq *rating* (read f)))
   (with-open-file (f filnavn2 :direction :input :if-does-not-exist nil :external-format 'charset:iso-8859-1)
@@ -801,7 +801,7 @@
            *rating*))
       (eval (ignore-errors (read f))))))
 
-(defun write-table (&optional (filnavn "ratingliste.post"))
+(defun write-table (&optional (filnavn "tmp/ratingliste.post"))
   (setq *print-pretty* nil)
   (dolist (spiller *all*)
     (incf (player-elo-number (spiller-old-spiller spiller))
@@ -1604,7 +1604,7 @@
   (show-list *rating* date))
 
 (defun show-list (list date)
-  (with-open-file (f "all.txt" :direction :output :if-exists :supersede :external-format 'charset:iso-8859-1)
+  (with-open-file (f "tmp/all.txt" :direction :output :if-exists :supersede :external-format 'charset:iso-8859-1)
     (format f "Elo list for ~a~2%" date)
     (format f "    Name                               Grades       Elo #games Nationality")
     (let ((teller 0)
@@ -2115,3 +2115,5 @@ to add this to the document. Comments?
     (maphash (lambda (nat diff)
          (format t "~%~3a ~4d / ~2d = ~3d" nat diff (gethash nat num) (round diff (gethash nat num))))
        result)))
+
+(run)
